@@ -4,6 +4,13 @@
     --shadow: 
         0 1px 3px rgba(0, 0, 0, 0.1),
         0 4px 6px rgba(0, 0, 0, 0.08);
+    --white-shadow: 
+        0 1px 3px rgba(255, 255, 255, 0.4),
+        0 4px 6px rgba(255, 255, 255, 0.3);
+    --gold-shadow: 
+        0 1px 3px rgba(222, 203, 118, 0.4),
+        0 4px 6px rgba(222, 203, 118, 0.3);
+
 }
 
 body {
@@ -19,10 +26,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('img/couple.jpg') center / cover no-repeat;
+    background: url('img/bg-cover.png') center / cover no-repeat;
     z-index: -1;
     filter: grayscale();
     -webkit-filter: grayscale();
+    opacity: 80%;
 }
 
 .hero {
@@ -30,15 +38,22 @@ body {
     min-height: 100vh;
 }
 
+/* .hero h4 {
+
+    text-shadow: var(--white-shadow);
+} */
+
 .hero h1 {
     font-family: 'Sacramento';
     font-size: 6rem;
+    color: var(--gold);
+    text-shadow: var(--shadow);
 }
 
 .hero a {
-    color: var(--gold);
+    color: var(--blue);
     background-color: transparent;
-    border: 1px solid var(--gold);
+    border: 1px solid var(--blue);
 }
 
 .hero a:hover {
