@@ -167,8 +167,7 @@ body {
 
 .cover,
 .couple,
-.info,
-.rsvp {
+.info {
     position: relative;
     overflow: visible;
     background: url('img/background.jpg') center / cover no-repeat;
@@ -265,6 +264,14 @@ body {
 .thanks .man,
 .thanks .woman {
     max-width: 100px;
+}
+
+.rsvp {
+    position: relative;
+    overflow: visible;
+    background: url('img/background.jpg') center / cover no-repeat;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .rsvp h1 {
