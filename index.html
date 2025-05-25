@@ -94,7 +94,7 @@
                         <div class="col-md-12">
                             <h4 class="groom-name">Taqiyuddin Ja'far Syaifullah</h4>
                             <p>Putra pertama dari Bapak Dhody dan Ibu Endah</p>
-                            <img src="img/taqi.jpg" alt="groom" class="groom img-fluid rounded-circle mt-3">
+                            <img src="img/taqi.jpg" alt="groom" class="groom rounded-circle mt-3">
                         </div>
                     </div>
                 </div>
@@ -331,85 +331,3 @@
         }
     });
 </script>
-
-
-<!-- <script>
-    const rootElement = document.querySelector(':root')
-    const song = document.querySelector('#song')
-    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
-    let isPlaying = false;
-    let audioIcon = document.querySelector('.audio-icon-wrapper i');
-
-    function disableScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
-
-        window.onscroll = function() {
-            window.scrollTo(scrollTop, scrollLeft)
-        }
-
-        rootElement.style.scrollBehavior = 'auto'
-    }
-
-    function enableScroll() {
-        window.onscroll = function () {}
-
-        playAudio()
-
-        rootElement.style.scrollBehavior = 'smooth'
-    }
-
-    disableScroll()
-
-    simplyCountdown('.simply-countdown', {
-        year: 2025, // Target year (required)
-        month: 6, // Target month [1-12] (required)
-        day: 20, // Target day [1-31] (required)
-        hours: 14, // Target hour [0-23], default: 0
-        words: { // Custom labels, with lambda for plurals
-            days: { root: 'hari', lambda: (root, n) => n > 1 ? root : root },
-            hours: { root: 'jam', lambda: (root, n) => n > 1 ? root : root },
-            minutes: { root: 'menit', lambda: (root, n) => n > 1 ? root : root },
-            seconds: { root: 'detik', lambda: (root, n) => n > 1 ? root : root }
-        }
-    })
-
-    window.addEventListener("load", function() {
-        const form = document.getElementById('my-form');
-
-        form.addEventListener("submit", function(e) {
-            e.preventDefault();
-
-            const data = new FormData(form);
-            const action = e.target.action;
-            
-            fetch(action, {
-                method: 'POST',
-                body: data,
-            }).then(() => {
-                alert("Success!");
-            })
-        });
-    });
-
-    function playAudio() {
-        // song.volume() = 0.1;
-        audioIconWrapper.style.display = 'flex';
-        song.play();
-        isPlaying = true;
-    }
-
-    audioIconWrapper.onclick = function() {
-        if(isPlaying) {
-            song.pause();
-            audioIcon.classList.remove('bi-disc');
-            audioIcon.classList.add('bi-pause-circle');
-        } else {
-            song.play();
-            audioIcon.classList.remove('bi-pause-circle');
-            audioIcon.classList.add('bi-disc');
-        }
-
-        isPlaying = !isPlaying;
-    }
-</script> -->

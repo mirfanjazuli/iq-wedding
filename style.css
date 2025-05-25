@@ -203,6 +203,7 @@ body {
 .couple .groom {
     max-width: 200px;
     border: 1px solid var(--gold);
+    background-color: transparent;
 }
 
 .couple h4 {
@@ -286,13 +287,16 @@ body {
 .rsvp select {
     font-size: 0.9rem;
     font-weight: 300;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    opacity: 50%;
 }
 
 .rsvp button {
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--blue);
-    background-color: white;
+    background-color: transparent;
     border: 1px solid var(--blue);
 }
 
